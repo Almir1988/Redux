@@ -9,20 +9,13 @@ export default class AddTodo extends Component {
             <button onClick = {(e) => this.handleClick(e)}>
                Add Product
             </button>
-         </div>llllll
+         </div>
       ) 
    }
    handleClick(e) {
       const node = this.refs.input
-      const ProductName = node.value.trim()
-      const Quantity=node.value.trim()
-      const Prod={
-          
-         ProductName:this.ProductName,
-         Quantity:this.Quantity
-         
-      }
-      this.props.onAddClick(Prod)
+      const Product = node.value.trim()
+      this.props.onAddClick(Product)
       node.value = ''
    }
 }
