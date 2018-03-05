@@ -11,7 +11,7 @@ class App extends Component {
       
       return (
          <div>
-            <AddTodo onAddClick = {Product =>dispatch(addTodo(Product))} />
+            <AddTodo onAddClick = {ProductName =>dispatch(addTodo(ProductName))} />
             <TodoList todos = {visibleTodos}/>
          </div>
       )

@@ -7,7 +7,7 @@ function todo(state, action) {
          return {
             
             ProductName:action.ProductName,
-            Quantity:action.Quantity
+            
            
          }
       default:

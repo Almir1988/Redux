@@ -7,7 +7,7 @@ export default class TodoList extends Component {
          <ul>
             {this.props.todos.map(todo =>
                <Todo
-                  key = {todo.id}
+                  key = {todo.ProductName}
                   {...todo}
                />
             )}

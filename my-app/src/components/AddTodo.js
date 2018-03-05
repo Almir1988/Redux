@@ -5,7 +5,6 @@ export default class AddTodo extends Component {
       return (
          <div className="pos">
             <input type = 'ProductName' ref = 'input' /><br/>
-		    <input type = 'Quantity' ref = 'input' /><br/>
             <button onClick = {(e) => this.handleClick(e)}>
                Add Product
             </button>
@@ -13,9 +12,9 @@ export default class AddTodo extends Component {
       ) 
    }
    handleClick(e) {
-      const node = this.refs.input
-      const Product = node.value.trim()
-      this.props.onAddClick(Product)
-      node.value = ''
+    const node = this.refs.input
+    const ProductName = node.value.trim()
+    this.props.onAddClick(ProductName)
+    node.value = ''
    }
 }
