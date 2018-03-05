@@ -3,13 +3,13 @@ import './style.css'
 export default class AddTodo extends Component {
    render() {
       return (
-         <div className="">
+         <div className="pos">
             <input type = 'ProductName' ref = 'input' /><br/>
 		    <input type = 'Quantity' ref = 'input' /><br/>
             <button onClick = {(e) => this.handleClick(e)}>
                Add Product
             </button>
-         </div>
+         </div>llllll
       ) 
    }
    handleClick(e) {
