@@ -9,9 +9,10 @@ class App extends Component {
    render() {
       const { dispatch, visibleTodos } = this.props
       
+     
       return (
          <div>
-            <AddTodo onAddClick = {ProductName =>dispatch(addTodo(ProductName))} />
+            <AddTodo onAddClick = {Product =>dispatch(addTodo())} />
             <TodoList todos = {visibleTodos}/>
          </div>
       )
