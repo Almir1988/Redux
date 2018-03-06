@@ -18,8 +18,17 @@ export default class AddTodo extends Component {
     const node2=this.refs.input2
     const ProductName = node.value.trim()
     const Quantity=node2.value.trim()
-    const Prod=[ProductName,Quantity]
+    console.log(ProductName)
+    console.log(Quantity)
+
+    const Prod={
+
+        ProductName:ProductName,
+        Quantity:Quantity
+    }
+
     this.props.onAddClick(Prod)
+    console.log(Prod)
     node.value = ''
     node2.value=''
    }
