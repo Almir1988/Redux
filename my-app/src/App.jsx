@@ -12,7 +12,7 @@ class App extends Component {
      
       return (
          <div>
-            <AddTodo onAddClick = {Product =>dispatch(addTodo())} />
+            <AddTodo onAddClick = {Product =>dispatch(addTodo(Product))} />
             <TodoList todos = {visibleTodos}/>
          </div>
       )

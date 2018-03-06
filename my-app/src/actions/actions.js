@@ -1,10 +1,10 @@
 export const ADD_TODO = 'ADD_TODO'
 
 
-export function addTodo(ProductName,Quantity) {
+export function addTodo(Product) {
+  
    return {
       type: ADD_TODO,
-      ProductName,
-      Quantity
+      Product
    };
 }
