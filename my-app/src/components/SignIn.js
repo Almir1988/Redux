@@ -13,7 +13,7 @@ export default class SignIn extends Component {
       ) 
    }
 // 
-   handleClick(e) {
+   handleClick(e) { 
     const node = this.refs.input
     const node2=this.refs.input2
     const username = node.value.trim()
