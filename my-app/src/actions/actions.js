@@ -32,28 +32,26 @@ export function addTodo(Product) {
     }
 }
 
-export function logIn(user) {
+export function logIn(User) {
   
-    if(user.username=== "admin" && user.password=== "admin")
+    if(User.username=== "admin" && User.password=== "admin")
     {
            
        return {
        type:LOGIN_USER,
-       user
+       User
          };
     }
     else
     {
-        user={
+        User={
 
             username:'error',
             password:'error'
         }
-
-        
          return {
        type: LOGIN_USER,
-       user
+       User
          };
     
     }

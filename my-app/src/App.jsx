@@ -24,14 +24,9 @@ function select(state) {
    return {
     visibleTodos: state.todos
  }
+ return {
+
+    visibleUser: state.users
 }
-function select2(state)
-{
-    return {
-
-        visibleUser: state.users
-    }
 }
-
-
-export default connect({select},{select2})(App);
+export default connect(select)(App);

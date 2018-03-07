@@ -5,12 +5,10 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import App from './App.jsx'
-import {todoApp,LogApp} from './reducers/reducers'
+import {todoApp} from './reducers/reducers'
 
 
-let store1=todoApp;
-let store2=LogApp;
-let store=createStore(store1,store2)
+let store=createStore(todoApp)
 let rootElement = document.getElementById('app')
 
 render(

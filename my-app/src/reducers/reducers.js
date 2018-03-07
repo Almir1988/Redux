@@ -25,9 +25,8 @@ function users(state = [], action) {
       }
    }
 const todoApp = combineReducers({
-      todos
-})
-const LogApp = combineReducers({
+      todos,
       users
 })
-export  {todoApp,LogApp}
+
+export {todoApp}
