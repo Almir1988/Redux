@@ -18,7 +18,7 @@ function users(state = [], action) {
        case LOGIN_USER:
             return [
                ...state,
-               action.user
+               action.User
             ]
          default:
             return state

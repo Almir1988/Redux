@@ -34,7 +34,7 @@ export function addTodo(Product) {
 
 export function logIn(User) {
   
-    if(User.username=== "admin" && User.password=== "admin")
+    if(User.username=== "admin" && User.password=== "admin" || User.username=== "User" && User.password=== "User")
     {
            
        return {

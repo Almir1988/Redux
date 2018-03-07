@@ -11,8 +11,7 @@ class App extends Component {
       const { dispatch, visibleTodos, visibleUser } = this.props
       return (
          <div>
-            <AddTodo onAddClick = {Product =>dispatch(addTodo(Product))} />
-            <TodoList todos = {visibleTodos}/>
+          
             <SignIn onAddClick={User=>dispatch(logIn(User))} />
             <UserList users = {visibleUser}/>
          </div>
@@ -22,11 +21,9 @@ class App extends Component {
 function select(state) {
   
    return {
-    visibleTodos: state.todos
- }
- return {
-
+    visibleTodos: state.todos,
     visibleUser: state.users
-}
+ }
+ 
 }
 export default connect(select)(App);
